@@ -1,0 +1,109 @@
+/* Genel stil ayarları */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f1f1f1;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Başlık */
+.main-heading {
+  font-size: 3rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.posts-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 40px;
+  color: #2c3e50;
+}
+
+/* Kategori Linkleri */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.category {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.category:hover {
+  background-color: #2980b9;
+}
+
+/* Yazılar için stil */
+.posts-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.post-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+}
+
+.post-link h2 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.post-item p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+.category-tag {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
